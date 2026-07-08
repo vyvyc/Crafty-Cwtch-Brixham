@@ -2,6 +2,8 @@
 
 Captured and referenced on 2026-07-09.
 
+Updated on 2026-07-09 to replace the visible website photography with original generated commercial-style imagery. The generated image prompts are saved in `image-prompts/`; the finished web assets are `assets/crafty-hero-generated.jpg`, `assets/crafty-shopfront-generated.jpg`, `assets/crafty-craft-table-generated.jpg`, and `assets/crafty-gifts-generated.jpg`.
+
 ## Official / Owned Web Presence
 
 - Official old website: https://www.craftycwtch.com/
