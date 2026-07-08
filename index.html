@@ -3,136 +3,236 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Crafty Cwtch homepage concept for visitor-focused cafe and restaurant discovery in Brixham.">
-    <title>Crafty Cwtch | Brixham</title>
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%232f6f73'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' font-size='34' font-family='Georgia' fill='white'%3EC%3C/text%3E%3C/svg%3E">
+    <meta name="description" content="Crafty Cwtch is a Brixham coffee, craft, and gift shop on Middle Street with tea, coffee, cakes, snacks, and family-friendly craft ideas.">
+    <meta property="og:title" content="Crafty Cwtch | Coffee, Crafts & Gifts in Brixham">
+    <meta property="og:description" content="Tea, coffee, cakes, snacks, gifts, and craft ideas at 66 Middle Street, Brixham.">
+    <meta property="og:image" content="https://vyvyc.github.io/Crafty-Cwtch-Brixham/assets/crafty-interior.jpg">
+    <title>Crafty Cwtch | Coffee, Crafts & Gifts in Brixham</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%232d6350'/%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' font-size='34' font-family='Georgia' fill='%23fff7e8'%3EC%3C/text%3E%3C/svg%3E">
+    <link rel="preload" href="assets/crafty-interior.jpg" as="image">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to main content</a>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
     <header class="site-header">
       <a class="brand" href="#home" aria-label="Crafty Cwtch home">
         <span class="brand-mark">C</span>
         <span>
-          <span class="brand-kicker">coffee/craft/gift shop</span>
+          <span class="brand-note">Brixham coffee · craft · gifts</span>
           <span class="brand-name">Crafty Cwtch</span>
         </span>
       </a>
-      <nav aria-label="Primary navigation">
-        <a href="#home" aria-current="page">Home</a>
-        <a href="#menu">What to show</a>
-        <a href="#visit">Visit</a>
-        <a href="#contact">Contact</a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#home" aria-current="page">The Shop</a></li>
+          <li><a href="#craft">Craft</a></li>
+          <li><a href="#food">Coffee</a></li>
+          <li><a href="#visit">Visit</a></li>
+          <li><a href="mailto:crafty-cwtch@hotmail.com">Email</a></li>
+        </ul>
       </nav>
     </header>
 
-    <main id="main">
-      <section class="hero" id="home">
-        <div class="hero-photo" aria-hidden="true">
-          <div class="visual-card visual-card-main">
-            <span>Brixham</span>
-            <strong>Crafty Cwtch</strong>
-          </div>
-          <div class="visual-card visual-card-side">
-            <span>Menu</span>
-            <strong>coffee/craft/gift shop</strong>
-          </div>
+    <main id="main-content">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true">
+          <img src="assets/crafty-interior.jpg" alt="">
         </div>
-        <div class="hero-copy">
-          <p class="eyebrow">Brixham · visitor-ready concept</p>
-          <h1>Coffee, craft finds, and local gifts under one welcoming roof.</h1>
-          <p>A focused one-page concept for Crafty Cwtch, built around what visitors need first: what it is, why to stop, where to go, and how to check the latest details.</p>
+        <div class="hero-inner">
+          <p class="kicker">66 Middle Street · Brixham harbour town</p>
+          <h1 id="hero-title">Coffee, crafts, gifts, and a proper little cwtch.</h1>
+          <p class="hero-copy">
+            A small independent Brixham stop for tea, coffee, cakes, snacks, gift browsing, and hands-on craft ideas for families.
+          </p>
           <div class="hero-actions">
-            <a class="button primary" href="#visit">Plan a visit</a>
-            <a class="button secondary" href="mailto:crafty-cwtch@hotmail.com">Email the team</a>
+            <a class="button primary" href="#visit">Find the shop</a>
+            <a class="button secondary" href="https://www.craftycwtch.com/" target="_blank" rel="noopener">Old website</a>
           </div>
         </div>
-        <aside class="proof-panel" aria-label="Concept focus">
-          <span>Concept focus</span>
-          <strong>Coffee shop, craft shop, gift shop positioning</strong>
+
+        <aside class="hero-strip" aria-label="Quick visit details">
+          <a href="#visit">
+            <span>Find us</span>
+            <strong>66 Middle Street, Brixham TQ5 8EJ</strong>
+          </a>
+          <a href="#food">
+            <span>Counter</span>
+            <strong>Tea · coffee · cakes · snacks</strong>
+          </a>
+          <a href="#craft">
+            <span>Shop</span>
+            <strong>Craft-based gifts and family activity ideas</strong>
+          </a>
+          <a href="#hygiene">
+            <span>FHRS</span>
+            <strong>5 rating, inspected 24 July 2024</strong>
+          </a>
         </aside>
       </section>
 
-      <section class="intro section-shell">
-        <div>
-          <p class="eyebrow">Why this first screen</p>
-          <h2>A sharper online welcome for people choosing where to stop today.</h2>
-        </div>
-        <p>
-          This demo is built for a small independent business that needs the essentials to work quickly on mobile:
-          a strong first image, a clear reason to visit, visible contact details, and enough local context to help
-          tourists decide without digging through directories.
-        </p>
-      </section>
+      <section class="story-section section-shell" id="story" aria-labelledby="story-title">
+        <div class="story-layout">
+          <figure class="story-image reveal-card">
+            <img src="assets/crafty-old-hero.jpeg" alt="Coffee cup and homemade cake at Crafty Cwtch" width="1280" height="851">
+          </figure>
 
-      <section class="menu section-shell" id="menu">
-        <div class="section-heading">
-          <p class="eyebrow">Home page content</p>
-          <h2>Lead with the details that make Crafty Cwtch easier to choose.</h2>
-        </div>
-        <div class="feature-grid">
-          <article>
-            <span>01</span>
-            <h3>Food and drink first</h3>
-            <p>Use a compact menu preview, real product photos, and daily or seasonal notes instead of making visitors hunt on social media.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Local proof</h3>
-            <p>Make the Brixham setting part of the story, with directions, nearby landmarks, and a clear mobile map prompt.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Quick contact</h3>
-            <p>Keep the public email, latest channels, and opening caveats visible so the page feels useful rather than decorative.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="visit" id="visit">
-        <div class="section-shell visit-grid">
-          <div>
-            <p class="eyebrow">Visit signal</p>
-            <h2>Crafty Cwtch should be findable before a visitor reaches the street.</h2>
-            <ul class="visit-list">
-              <li>menu highlights up front</li>
-              <li>map and opening details</li>
-              <li>visitor-friendly local story</li>
+          <div class="story-copy">
+            <p class="fine-label">The idea</p>
+            <h2 id="story-title">A cafe counter with a craft-shop reason to linger.</h2>
+            <p>
+              Public tourism copy describes Crafty Cwtch as a coffee shop, craft shop, and gift shop in one. The old site introduces Janet and Dave's 2019 shop opening and the idea of giving children a space to explore their creative side while adults enjoy coffee and snacks.
+            </p>
+            <ul class="feature-list" aria-label="Crafty Cwtch highlights">
+              <li>Tea, coffee, cakes, snacks, and Welsh cakes listed in public tourism copy.</li>
+              <li>Craft-based gifts and make-it-yourself ideas for families.</li>
+              <li>A visitor-friendly Middle Street stop close to Brixham harbour routes.</li>
             </ul>
           </div>
-          <div class="map-card">
-            <span>Brixham Devon</span>
-            <strong>Crafty Cwtch</strong>
-            <p>Replace this concept panel with a live Google map, fresh exterior photo, and current opening hours once the business confirms final details.</p>
+        </div>
+      </section>
+
+      <section class="craft-section" id="craft" aria-labelledby="craft-title">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="fine-label">Craft and gifts</p>
+            <h2 id="craft-title">Make the family-friendly craft angle impossible to miss.</h2>
+            <p>
+              The strongest sales hook is the mix: coffee for the adults, colour and craft for children, and small gifts that feel more personal than a standard seaside souvenir.
+            </p>
+          </div>
+
+          <div class="craft-grid">
+            <article>
+              <img src="assets/crafty-exterior.png" alt="Child showing colourful painted hands">
+              <span>Hands-on</span>
+              <h3>Creative time for younger visitors.</h3>
+              <p>Tourism copy frames the shop around children adding personal touches to gifts bought in-store.</p>
+            </article>
+            <article>
+              <img src="assets/crafty-cafe.png" alt="Plain ceramic craft pieces ready to decorate">
+              <span>Gifts</span>
+              <h3>Craft-based pieces and keepsakes.</h3>
+              <p>Gift browsing becomes part of the visit, with a craft-led story behind what goes on the shelves.</p>
+            </article>
+            <article>
+              <img src="assets/crafty-window.png" alt="A child painting at a craft table">
+              <span>Table</span>
+              <h3>Activities that turn a quick stop into a memory.</h3>
+              <p>The page should show how the craft side works before visitors reach the door.</p>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="audit section-shell">
+      <section class="food-section section-shell" id="food" aria-labelledby="food-title">
+        <div class="food-copy">
+          <p class="fine-label">Tea, coffee, cakes</p>
+          <h2 id="food-title">A simple counter message for people choosing where to pause.</h2>
+          <p>
+            Public listings mention fabulous teas, coffees, Welsh cakes, and yummy things. The demo keeps the offer compact because menus and opening hours should be confirmed by the business before commercial use.
+          </p>
+        </div>
+
+        <div class="menu-board reveal-card">
+          <div class="menu-tabs" role="tablist" aria-label="Visitor priorities">
+            <button class="menu-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="drink-panel" id="drink-tab" data-tab="drink">Drinks</button>
+            <button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="cake-panel" id="cake-tab" data-tab="cake">Cakes</button>
+            <button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="gift-panel" id="gift-tab" data-tab="gift">Gifts</button>
+          </div>
+
+          <div class="menu-panels">
+            <article class="menu-panel is-active" id="drink-panel" role="tabpanel" aria-labelledby="drink-tab" data-panel="drink">
+              <div>
+                <span>Counter</span>
+                <h3>Tea and coffee while you browse.</h3>
+                <p>Keep the first choice simple: hot drinks for a pause on Middle Street.</p>
+              </div>
+              <img src="assets/crafty-shopfront.jpg" alt="A hot drink served at Crafty Cwtch">
+            </article>
+            <article class="menu-panel" id="cake-panel" role="tabpanel" aria-labelledby="cake-tab" data-panel="cake" hidden>
+              <div>
+                <span>Sweet stop</span>
+                <h3>Cakes, Welsh cakes, and snack-friendly food.</h3>
+                <p>Use the page as a liveable menu preview without pretending every item is always available.</p>
+              </div>
+              <img src="assets/crafty-old-hero.jpeg" alt="Cake beside coffee at Crafty Cwtch">
+            </article>
+            <article class="menu-panel" id="gift-panel" role="tabpanel" aria-labelledby="gift-tab" data-panel="gift" hidden>
+              <div>
+                <span>Retail</span>
+                <h3>Small gifts with a craft-first identity.</h3>
+                <p>The visitor promise is strongest when the cafe and gift shop feel like one joined-up experience.</p>
+              </div>
+              <img src="assets/crafty-gifts.png" alt="Paint tubes for craft work">
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="visit-section" id="visit" aria-labelledby="visit-title">
+        <div class="section-shell visit-layout">
+          <div class="visit-copy">
+            <p class="fine-label">Visit</p>
+            <h2 id="visit-title">Look for the green-and-red Crafty Cwtch frontage on Middle Street.</h2>
+            <p>
+              English Riviera and FHRS records place Crafty Cwtch at 66 Middle Street, Brixham TQ5 8EJ. The map below is draggable and zoomable for checking the surrounding streets before visiting.
+            </p>
+            <div class="visit-actions">
+              <a class="button primary" href="https://www.google.com/maps/search/?api=1&amp;query=Crafty%20Cwtch%2066%20Middle%20Street%20Brixham%20TQ5%208EJ" target="_blank" rel="noopener">Open Google Maps</a>
+              <a class="button tertiary" href="mailto:crafty-cwtch@hotmail.com">Email the shop</a>
+            </div>
+          </div>
+
+          <div class="visit-stack">
+            <figure class="map-card reveal-card">
+              <div class="map-embed">
+                <iframe
+                  title="Interactive Google map preview for Crafty Cwtch in Brixham"
+                  src="https://www.google.com/maps?q=50.3951,-3.5139&amp;z=17&amp;output=embed"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <figcaption>
+                Drag or zoom the map to preview Middle Street.
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=50.3951%2C-3.5139" target="_blank" rel="noopener">Open in Google Maps</a>
+              </figcaption>
+            </figure>
+
+            <aside class="facts-card reveal-card" id="hygiene" aria-label="Business facts">
+              <dl>
+                <div><dt>Address</dt><dd>66 Middle Street, Brixham TQ5 8EJ</dd></div>
+                <div><dt>Phone</dt><dd><a href="tel:+447988374245">07988 374245</a></dd></div>
+                <div><dt>Email</dt><dd><a href="mailto:crafty-cwtch@hotmail.com">crafty-cwtch@hotmail.com</a></dd></div>
+                <div><dt>FHRS</dt><dd>5 rating, inspected 24 July 2024</dd></div>
+              </dl>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-section section-shell" aria-labelledby="proof-title">
         <div>
-          <p class="eyebrow">Observed opportunity</p>
-          <h2>The current online presence leaves value on the table.</h2>
+          <p class="fine-label">Why the site matters</p>
+          <h2 id="proof-title">The business has visual charm, but the web story needs a cleaner first impression.</h2>
         </div>
-        <p>no clear polished standalone visitor site found from listing</p>
-      </section>
-
-      <section class="contact" id="contact">
-        <div class="section-shell contact-inner">
-          <div>
-            <p class="eyebrow">Demo handoff</p>
-            <h2>Built as a starting point for a practical EUR 1000 website upgrade.</h2>
-            <p>High: hybrid cafe/shop benefits from visual home page and visitor map</p>
-          </div>
-          <a class="button primary" href="mailto:crafty-cwtch@hotmail.com">crafty-cwtch@hotmail.com</a>
-        </div>
+        <p>
+          The old website has useful history and identity, while tourism and hygiene listings carry the current address and public trust signals. This rebuild turns that scattered information into a visitor discovery page that can be sold as a practical 1000 USD upgrade.
+        </p>
       </section>
     </main>
 
     <footer>
       <div class="section-shell footer-inner">
         <span>Crafty Cwtch</span>
-        <a href="https://www.englishriviera.co.uk/food-and-drink/by-location/brixham/1000?p=2" target="_blank" rel="noopener">Research source</a>
+        <nav aria-label="Footer links">
+          <a href="https://www.craftycwtch.com/" target="_blank" rel="noopener">Old site</a>
+          <a href="https://www.englishriviera.co.uk/food-and-drink/crafty-cwtch-brixham-p2835173" target="_blank" rel="noopener">English Riviera</a>
+          <a href="research/SOURCES.md">Sources</a>
+        </nav>
       </div>
     </footer>
   </body>
